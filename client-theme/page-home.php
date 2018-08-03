@@ -45,19 +45,11 @@ get_header(); ?>
           </div>
         </div>
         <div class="team-member-text">
-<<<<<<< HEAD
           <h2><?php the_sub_field('name'); ?></h2>
           <h3><?php the_sub_field('title'); ?></h3>
-          <div class="team-member-bio">
-            <p><?php the_sub_field('bio'); ?></p>
-          </div>
-=======
-          <h2><?php the_sub_field('team_member_name'); ?></h2>
-          <h3><?php the_sub_field('team_member_title'); ?></h3>
         </div>
         <div class="team-member-bio">
-          <p><?php the_sub_field('team_member_bio'); ?></p>
->>>>>>> origin/master
+          <p><?php the_sub_field('bio'); ?></p>
         </div>
       </div>
       <?php $count++; ?>
