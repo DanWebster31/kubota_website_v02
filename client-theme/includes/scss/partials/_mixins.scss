@@ -1,0 +1,191 @@
+/*
+*  _mixins
+*  Author: P11 Interactive Team
+*  -------------------------------------------------------------------------------------------
+*  Notes: Define patterns of property value pairs, which can then be reused in other rule sets
+*/
+
+@mixin fontsmoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+}
+
+@mixin strictbuttonstyle {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+
+// // Center
+@mixin center-vert {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+@mixin center-horz {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+@mixin centerall {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+// General Transitions
+@mixin transition($args...) {
+  -webkit-transition: #{$args};
+  -moz-transition: #{$args};
+  -ms-transition: #{$args};
+  -o-transition: #{$args};
+  transition: #{$args};
+}
+
+// General Box Shadow
+@mixin box-shadow($args) {
+  -webkit-box-shadow: #{$args};
+  -moz-box-shadow: #{$args};
+  -ms-box-shadow: #{$args};
+  -o-box-shadow: #{$args};
+  box-shadow: #{$args};
+}
+
+// General Text Shadow
+@mixin text-shadow($args) {
+  -webkit-text-shadow: #{$args};
+  -moz-text-shadow: #{$args};
+  -ms-text-shadow: #{$args};
+  -o-text-shadow: #{$args};
+  text-shadow: #{$args};
+}
+
+// General Box Shadow
+@mixin svg-shadow($args) {
+  -webkit-filter: drop-shadow(#{$args});
+  -moz-filter: drop-shadow(#{$args});
+  -o-filter: drop-shadow(#{$args});
+   filter: drop-shadow(#{$args});
+}
+
+// Responsive
+
+/*@include mq-md {
+   width: 100%;
+ }*/
+
+@mixin mq-xs {
+  @media (max-width: #{$screen-xs}) {
+    @content;
+  }
+}
+
+@mixin mq-sm {
+  @media (max-width: #{$screen-sm}) {
+    @content;
+  }
+}
+
+@mixin mq-md {
+  @media (max-width: #{$screen-md}) {
+    @content;
+  }
+}
+
+@mixin mq-md-lg {
+  @media (max-width: #{$mq-md-lg}) {
+    @content;
+  }
+}
+
+@mixin mq-lg {
+  @media (max-width: #{$screen-lg}) {
+    @content;
+  }
+}
+
+@mixin mq-xlg {
+  @media (max-width: #{$screen-xlg}) {
+    @content;
+  }
+}
+
+@mixin mq-min($args) {
+  @media (min-width: (#{$args})) {
+    @content;
+  }
+}
+
+@mixin mq-max($args) {
+  @media (max-width: (#{$args})) {
+    @content;
+  }
+}
+
+@mixin mq-min-height($args) {
+  @media (min-height: (#{$args})) {
+    @content;
+  }
+}
+
+@mixin mq-max-height($args) {
+  @media (max-height: (#{$args})) {
+    @content;
+  }
+}
+
+// Transparent Colors
+@function fn-transparent-color($color , $opacity) {
+  @return rgba(red($color), green($color), blue($color), $opacity);
+} // fn-transparent-color($color-white , .85)
+
+// Gradients Backgrounds
+@mixin bg-gradient($start-color, $end-color, $start-postion, $end-position, $start-opacity, $end-opacity) {
+    background: $start-color;
+    background: -moz-linear-gradient($start-postion,  $start-color $start-opacity, $end-color $end-opacity);
+    background: -webkit-linear-gradient($start-postion,  $start-color $start-opacity, $end-color $end-opacity);
+    background: linear-gradient(to $end-position,  $start-color $start-opacity,$end-color $end-opacity);
+}
+
+// Rotate
+@mixin rotate($deg) {
+  -ms-transform: rotate($deg); /* IE 9 */
+  -webkit-transform: rotate($deg); /* Chrome, Safari, Opera */
+  transform: rotate($deg);
+}
+
+//Keyframe Animations
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}

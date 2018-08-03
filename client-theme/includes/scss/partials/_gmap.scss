@@ -1,0 +1,123 @@
+#gmapHolder {
+  @include mq-max(940px) {
+  		width:100%;
+  		height: auto !important;
+  		padding: 1.3em;
+  }
+}
+
+#map_canvas {
+	background-color: lighten($color-secondary, 40%);
+  @include mq-max(940px) {
+    z-index:0;
+		left:0px !important;
+		top:0px;
+		width:100% !important;
+		float:left;
+		position:relative;
+		overflow:hidden;
+		padding: 0;
+  }
+
+  @include mq-max(720px) {
+    height:480px;
+  }
+
+  @include mq-max(540px) {
+    height:460px;
+  }
+
+  @include mq-max(480px) {
+    height:380px;
+  }
+  @include mq-max(480px) {
+    height:320px;
+  }
+}
+
+
+#map, #map_canvas {
+	height: 683px;
+	width: 100%;
+	float: left;
+  @include mq-max(940px) {
+    height:520px;
+  }
+}
+
+.map-views, .map-views2 {
+	top: 60px;
+}
+
+.map-views, .map-views2 {
+	position:absolute;
+	left: 0px;
+	z-index: 200;
+	width: 110px;
+	margin: 0;
+	padding: 0.5em;
+	font-size: 0.9em;
+	font-weight: 400;
+	line-height: 1.2em;
+	text-align: center;
+	color: #fff;
+	opacity: 0.8;
+	background-color: #444;
+	cursor: pointer;
+}
+
+.map-views:hover, .map-views2:hover {
+	opacity: 1;
+}
+
+.map-views2 {
+	display:none;
+}
+
+.map-views,
+.map-views2 {
+  @include mq-max(940px) {
+    display: none;
+  }
+}
+
+#controlHolder {
+	position:absolute;
+}
+
+#cd-zoom-in, #cd-zoom-out {
+	position: absolute;
+	z-index: 300;
+	left: 10px;
+	width: 28px;
+	height: 28px;
+	cursor: pointer;
+	background-color: #444;
+	/*opacity:0.8;*/
+	background-repeat: no-repeat;
+	background-size: 24px 48px;
+	background-image: url(../../images/poi/cd-icon-controller.png);
+}
+#cd-zoom-in:hover, #cd-zoom-out:hover {
+  background-color: #555;
+}
+
+#cd-zoom-in {
+	top: 110px;
+	background-position: 50% 0;
+  @include mq-max(940px) {
+    z-index:1;
+		top: 40px;
+		left: 33px;
+  }
+}
+
+#cd-zoom-out {
+	top: 144px;
+	background-position: 50% -24px;
+  @include mq-max(940px) {
+		z-index:1;
+		top: 83px;
+		left: 33px;
+  }
+}

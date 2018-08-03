@@ -1,0 +1,27 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+VARIABLES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+$font-main: "Raleway",Arial, Helvetica, sans-serif;
+$font-main-bold: "Raleway",Arial, Helvetica, sans-serif;
+$font-main-light: "Raleway",Arial, Helvetica, sans-serif;
+$font-headline: "Raleway",Arial, Helvetica, sans-serif;
+$font-headline-bold: "Raleway",Arial, Helvetica, sans-serif;
+$font-headline-light: "Raleway",Arial, Helvetica, sans-serif;
+
+$color-black: #000000;
+$color-white: #FFFFFF;
+
+$color-primary: #f0930e; /* main dominant color from logo */
+$color-secondary: #575757; /* compliments main color */
+$color-tertiary: #232323; /* unique color, most likely from logo */
+$color-surrogate: #232323; /* a fourth color if necesary */
+
+// BREAKPOINTS
+$screen-xs: 350px; // Your phone is too small...
+$screen-sm: 640px; // iPhone
+$screen-md: 768px; // iPad
+$mq-md-lg: 845px;
+$screen-lg: 1024px; // Laptop
+$screen-xlg: 1248px; // Desktop
+$mq-xxlg: 1500px;

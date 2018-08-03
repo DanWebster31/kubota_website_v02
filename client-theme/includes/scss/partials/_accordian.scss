@@ -1,0 +1,288 @@
+/* Accordian */
+
+.accordion-container {
+	width: 100%;
+	margin: 0 0 20px;
+	clear: both;
+}
+
+a.accordion-toggle {
+	position: relative;
+	display: block;
+	padding: 0;
+	font-size: 1.5em;
+	font-weight: 300;
+	letter-spacing: .1em;
+	color: #fff;
+	text-decoration: none;
+	background-color: #a79d98;
+	margin: 10px 0 0 0;
+	@include transition(all 0.2s ease);
+}
+
+
+.accordion-toggle span {
+	display: block;
+	width: 40%;
+	padding: 0.5em 0;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #ad4a1a;
+	@include transition(all 0.2s ease);
+}
+
+.accordion-toggle:hover > span {
+	background-color: #c94f20;
+}
+
+.accordion-toggle.open > span {
+	background-color: #eb5a22 !important;
+}
+
+.accordion-toggle.open {
+	background-color: #68605c !important;
+}
+
+/*
+.accordion-toggle span.toggle-icon {
+	position: absolute;
+	top: 0.125em;
+	right: 1em;
+	font-size: 1em;
+}
+*/
+
+.accordion-content {
+	display: none;
+	margin: 0;
+	/*padding: 20px 20px 0 20px;
+	overflow: auto;*/
+}
+
+
+/* Accordian Subs  */
+
+.accordionsub-container {
+	width: 100%;
+	margin: 0;
+	clear: both;
+}
+
+.accordionsub-container { 
+	background: #bab0ab; 
+}
+
+a.accordionsub-toggle {
+	position: relative;
+	display: block;
+	padding: 0.75em 0;
+	font-size: 1em;
+	font-weight: 300;
+	background: none;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+}
+
+a.accordionsub-toggle { 
+	border-top: 1px solid #99918d;
+}
+
+.accordionsub-toggle span {
+	color: #231f20;
+}
+
+.plan-name {
+	display: inline-block;
+	font-size: 1.5em;
+	vertical-align: middle;
+}
+
+a.accordionsub-toggle:hover {
+	background-color: #8e8682;
+}
+
+a.accordionsub-toggle.open {
+	background-color: #eb5a22;
+}
+
+.accordionsub-toggle.open span,
+a.accordionsub-toggle:hover span {
+	color: #ffffff;
+}
+
+.accordionsub-toggle span.toggle-icon {
+	position: absolute;
+	top: .63em;
+	right: 20px;
+	font-size: 1.5em;
+}
+
+.accordionsub-content {
+	color: #231f20;
+	display: none;
+	padding: 20px 0;
+	overflow: auto;
+	background-color: #fff;
+}
+
+.accordionsub-content2 {
+	color: #231f20;
+	display: block;
+	padding: 20px 0;
+	overflow: auto;
+}
+
+
+.plan-links {
+	font-size: 1.25em;
+	margin-bottom: 2em;
+}
+
+.enlarge, .enlargerev {
+	margin: 0 0 0 1em;
+}
+
+.furnish {
+	/*margin: 0 1em;*/
+	margin: 0 1em 0 0;
+}
+
+.planpdf, .planpdfrev {
+	margin: 0 1em;
+}
+
+.planholder {
+	padding-bottom: 1em;
+}
+
+.planholder img {
+	max-width:100%;
+	width:auto;
+	max-height:550px;
+	height:auto;
+}
+
+.enlarge img, .enlargerev img, .planpdf img, .planpdfrev img, .furnish img, .planavail img {
+	display: inline-block;
+	margin: -5px 5px 0 0;
+}
+
+.page-template-page-floor-plans #content .accordionsub-container img {
+    max-height: 400px;
+	max-width: 90%;
+}
+
+.availability {
+	color: #fff;
+	margin: 0 auto;
+	width: 85%;
+	max-height: 550px;
+	overflow: auto;
+}
+
+.availability .left {
+	text-align: left;
+}
+
+.availability .right {
+	text-align: right;
+}
+
+.avail-row {
+	overflow: auto;
+	padding: 10px;
+	line-height: 150%!important;
+	font-size: 14px;
+	background-color: #508692;
+}
+
+.avail-row:first-of-type {
+	font-family: "Josefin Slab",serif;
+	background-color: #2F5B65;
+}
+
+.reserveBtn:link, .reserveBtn:visited {
+	display: block;
+	font-size: 0.875em;
+	font-weight: 500;
+	font-style: normal;
+	text-align: center;
+	text-decoration: none;
+	padding: 0.75em 5%;
+	margin: 0 0 0 20%;
+	width: 80%;
+	color: #404041;
+	background-color: #fff;
+}
+
+.reserveBtn:hover, .reserveBtn:active {
+	color: #c0a02e;
+
+}
+
+.reserveBtn.disabled, .reserveBtn.disabled:hover {
+	color: 404041!important;
+	pointer-events: none;
+   cursor: default;
+}
+
+
+.studio .avail-row { background-color: #be9e2e; }
+.studio .avail-row:nth-child(2n) { background-color: #cdb664; }
+
+.onebedopen .avail-row { background-color: #3d8a9c; }
+.onebedopen .avail-row:nth-child(2n) { background-color: #5cafc3; }
+
+.onebed .avail-row { background-color: #1c384a; }
+.onebed .avail-row:nth-child(2n) { background-color: #769db8; }
+
+.twobed .avail-row { background-color: #95542b; }
+.twobed .avail-row:nth-child(2n) { background-color: #cf926b; }
+
+@media (max-width: 850px) {
+
+.accordion-toggle span {
+      width: 60%;
+    }
+
+ }
+
+
+@media (max-width: 640px) {
+	
+	.accordion-toggle span {
+      width: 80%;
+    }
+
+	.enlarge, .furnish, .planpdf {
+		margin: 0 2px;
+	}
+
+	.availability {
+		margin-top: 20px;
+	}
+
+	.availability .half {
+		width: 50%;
+	}
+
+	.page-template-page-floor-plans #content .accordionsub-container img {
+		max-height: 200px;
+	}
+
+	.plan-name {
+		display: block;
+		clear:both;
+	}
+
+	.planholder {
+    padding: 0 2em;
+	}
+
+	.reserveBtn:link, .reserveBtn:visited {
+	    margin: .5em 0 0 0;
+	    padding: 0.75em 5%;
+	    width: 100%;
+	}
+
+}
