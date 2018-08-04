@@ -3016,12 +3016,23 @@ header.gosmall #header-menu-toggle {
 #mainmenu ul li {
   text-transform: uppercase;
   font-size: 1.75em;
-  margin: 0 0 1em 0; }
+  margin: 0 0 1.5em 0; }
 
 @media (max-width: 640px) {
   #mainmenu ul li {
-    font-size: 1.5em !important;
-    margin: 0 0 0.5em !important; } }
+    font-size: 1.5em !important; } }
+
+@media (max-height: 700px) {
+  #mainmenu ul li {
+    padding: 1vh; }
+  #mainmenu ul li li {
+    font-size: 4vh;
+    margin: 0 0 1vh 0; }
+  #mainmenu ul li ul {
+    padding: 0; }
+  #mainmenu ul li ul li {
+    font-size: 3vh;
+    margin: 0 0 1vh 0; } }
 
 #mainmenu ul li a:link, #mainmenu ul li a:visited {
   color: #fff; }
@@ -3031,39 +3042,6 @@ header.gosmall #header-menu-toggle {
 
 #mainmenu ul li.active a {
   color: #f0930e; }
-
-#mainmenu ul ul {
-  padding: 0 0 1em 0; }
-
-@media (max-width: 640px) {
-  #mainmenu ul ul {
-    padding: 0 0 1em 0 !important; } }
-
-#mainmenu ul ul li {
-  text-transform: none;
-  font-size: 1.25em; }
-
-@media (max-width: 640px) {
-  #mainmenu ul ul li {
-    font-size: 1em !important;
-    margin: 0 0 0.5em !important; }
-  #mainmenu ul ul li .city {
-    display: block;
-    width: 100%; }
-  #mainmenu ul ul li .comma {
-    display: none; } }
-
-@media (max-height: 700px) {
-  #mainmenu ul {
-    padding: 4vh; }
-  #mainmenu ul li {
-    font-size: 4vh;
-    margin: 0 0 3vh 0; }
-  #mainmenu ul ul {
-    padding: 0; }
-  #mainmenu ul ul li {
-    font-size: 3vh;
-    margin: 0 0 3vh 0; } }
 
 #slider {
   display: inherit;
