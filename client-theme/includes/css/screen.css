@@ -3444,7 +3444,7 @@ header.gosmall #header-menu-toggle {
 
 .home #team-members .team-member {
   width: 49.5%;
-  height: 70vh;
+  height: 90vh;
   float: left;
   background: rgba(0, 0, 0, 0.5);
   padding-bottom: 1em; }
@@ -3545,8 +3545,8 @@ header.gosmall #header-menu-toggle {
 .home #team-members .team-member .team-member-bio {
   position: absolute;
   width: 56%;
-  height: 85%;
-  top: 105px;
+  height: 82%;
+  top: 111px;
   left: 40%;
   overflow: auto;
   border-bottom: #f0930e 1px solid; }
@@ -3964,14 +3964,16 @@ header.gosmall #header-menu-toggle {
   padding: 0.4em; }
 
 #contact-us .contact-row a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #f0930e;
+  margin-left: 0.2em; }
 
 #contact-us .contact-row h2 {
   display: inline-block;
   font-size: 1.7em;
   color: #f0930e;
-  margin-left: 1em;
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin: 0.5em 0; }
 
 @media screen and (max-width: 1500px) {
   #contact-us .contact-row h2 {

@@ -122,7 +122,7 @@ get_header(); ?>
     <h2 class="hometitle tprimary-dark tcenter upper">Contact Us</h2>
     <p class="tcenter">For more information about Kubota & Craig, please give us a call. We look forward to hearing from you.</p>
     <div class="contact-row">
-      <h2 class="tprimary tcenter"><img src="<?= get_template_directory_uri(); ?>/images/global/phone.svg" alt="call"> <?= the_field('contact_phone','option'); ?></h2>
+      <h2 class="tprimary tcenter"><img src="<?= get_template_directory_uri(); ?>/images/global/phone.svg" alt="call"><a href="tel:1-949-218-5676"><?= the_field('contact_phone','option'); ?></a></h2>
   </div>
 <!--
     <form name="interest-list" id="interest-list" class="clearfix">
