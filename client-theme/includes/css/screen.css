@@ -2932,7 +2932,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  height: 75px;
+  height: 120px;
   z-index: 997;
   background: none; }
 
@@ -2941,7 +2941,7 @@ header.gosmall {
 
 header.gosmall #logo {
   top: 10px;
-  width: 250px; }
+  width: 150px; }
 
 header.gosmall #header-menu-toggle {
   top: 15px; }
@@ -2950,7 +2950,7 @@ header.gosmall #header-menu-toggle {
   position: fixed;
   left: 3em;
   top: 20px;
-  width: 500px;
+  width: 350px;
   height: auto;
   -webkit-transition: width 0.5s ease-out,top 0.5s ease-out;
   -moz-transition: width 0.5s ease-out,top 0.5s ease-out;
@@ -2961,7 +2961,7 @@ header.gosmall #header-menu-toggle {
 @media (max-width: 768px) {
   #logo {
     top: 10px;
-    width: 300px; } }
+    width: 250px; } }
 
 #header-menu-toggle {
   color: #f0930e;
@@ -3523,8 +3523,13 @@ header.gosmall #header-menu-toggle {
 .home #team-members .team-member .team-member-bio {
   position: absolute;
   width: 56%;
+<<<<<<< HEAD
+  height: 80%;
+  top: 105px;
+=======
   height: 82%;
   top: 111px;
+>>>>>>> ec2a5e08ebc86224703852533d0cce2b4472192a
   left: 40%;
   overflow: auto;
   border-bottom: #f0930e 1px solid; }
@@ -3967,7 +3972,8 @@ header.gosmall #header-menu-toggle {
   max-width: 24px;
   min-width: 16px;
   height: auto;
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin: 0 0.3em 0 0; }
 
 #googledirections form {
   display: table;

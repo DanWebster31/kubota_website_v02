@@ -330,20 +330,36 @@ HEADER
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 header {
+<<<<<<< HEAD
+position: fixed;
+top: 0;
+left: 0;
+height: 120px;
+z-index: 997;
+background: none;
+=======
   position: fixed;
   top: 0;
   left: 0;
   height: 75px;
   z-index: 997;
   background: none;
+>>>>>>> ec2a5e08ebc86224703852533d0cce2b4472192a
 
   &.gosmall {
     background: fn-transparent-color($color-tertiary, 0.95);
 
+<<<<<<< HEAD
+  #logo {
+    top: 10px;
+    width: 150px;
+  }
+=======
     #logo {
       top: 10px;
       width: 250px;
     }
+>>>>>>> ec2a5e08ebc86224703852533d0cce2b4472192a
 
     #header-menu-toggle {
       top: 15px;
@@ -357,13 +373,21 @@ header {
   position: fixed;
   left: 3em;
   top: 20px;
+<<<<<<< HEAD
+  width: 350px;
+=======
   width: 500px;
+>>>>>>> ec2a5e08ebc86224703852533d0cce2b4472192a
   height: auto;
   @include transition(width 0.5s ease-out, top 0.5s ease-out);
 
   @include mq-md {
     top: 10px;
+<<<<<<< HEAD
+    width: 250px;
+=======
     width: 300px;
+>>>>>>> ec2a5e08ebc86224703852533d0cce2b4472192a
   }
 }
 
@@ -953,8 +977,13 @@ h2.hometitle {
     .team-member-bio {
       position: absolute;
       width: 56%;
+<<<<<<< HEAD
+      height: 80%;
+      top: 105px;
+=======
       height: 82%;
       top: 111px;
+>>>>>>> ec2a5e08ebc86224703852533d0cce2b4472192a
       left: 40%;
       overflow: auto;
       border-bottom: $color-primary 1px solid;
@@ -1482,6 +1511,7 @@ h4 {
     min-width: 16px;
     height: auto;
     vertical-align: middle;
+    margin: 0 0.3em 0 0;
   }
 }
 
