@@ -11,8 +11,3 @@ input[type="text"], input[type="text"]:focus, select:focus, textarea:focus, inpu
 
 #uplink {
   display: none; }
-
-#logo, header.gosmall #logo {
-  top: 20px;
-  width: 200px;
-  left: 1.5em; }

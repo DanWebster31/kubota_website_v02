@@ -330,66 +330,59 @@ HEADER
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 header {
-<<<<<<< HEAD
-position: fixed;
-top: 0;
-left: 0;
-height: 120px;
-z-index: 997;
-background: none;
-=======
   position: fixed;
   top: 0;
   left: 0;
-  height: 75px;
+  height: 120px;
   z-index: 997;
   background: none;
->>>>>>> ec2a5e08ebc86224703852533d0cce2b4472192a
+
+  #logo {
+    position: fixed;
+    left: 3em;
+    top: 20px;
+    width: 350px;
+    height: auto;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    @include transition(width 0.5s ease-out, top 0.5s ease-out);
+
+    @include mq-md {
+      left: 0px;
+      top: 0px;
+      width: 200px;
+      padding: 0.7em;
+      background: rgba($color-black, 0.4);
+    }
+  }
 
   &.gosmall {
-    background: fn-transparent-color($color-tertiary, 0.95);
-
-<<<<<<< HEAD
-  #logo {
-    top: 10px;
-    width: 150px;
-  }
-=======
+    background: fn-transparent-color($color-black, 0.8);
+    height: 90px;
     #logo {
-      top: 10px;
-      width: 250px;
+      left: -25px;
+      top: 5px;
+      width: 180px;
+      height: 70px;
+      overflow: hidden;
+      padding: 0;
+      background: none;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
->>>>>>> ec2a5e08ebc86224703852533d0cce2b4472192a
-
     #header-menu-toggle {
       top: 15px;
     }
-
   }
 
 }
 
-#logo {
-  position: fixed;
-  left: 3em;
-  top: 20px;
-<<<<<<< HEAD
-  width: 350px;
-=======
-  width: 500px;
->>>>>>> ec2a5e08ebc86224703852533d0cce2b4472192a
-  height: auto;
-  @include transition(width 0.5s ease-out, top 0.5s ease-out);
 
-  @include mq-md {
-    top: 10px;
-<<<<<<< HEAD
-    width: 250px;
-=======
-    width: 300px;
->>>>>>> ec2a5e08ebc86224703852533d0cce2b4472192a
-  }
-}
 
 #header-menu-toggle {
   color: $color-primary;
@@ -405,16 +398,16 @@ background: none;
   width: 37px;
   @include transition(top 0.5s ease);
 
-span {
-  color: $color-white;
-  padding-top: 5px;
-  font-weight: 800;
-}
+  span {
+    color: $color-white;
+    padding-top: 5px;
+    font-weight: 800;
+  }
 
-i {
+  i {
     font-size: 1.5em;
     margin-right: 0.25em;
-}
+  }
 
 }
 
@@ -977,13 +970,8 @@ h2.hometitle {
     .team-member-bio {
       position: absolute;
       width: 56%;
-<<<<<<< HEAD
       height: 80%;
       top: 105px;
-=======
-      height: 82%;
-      top: 111px;
->>>>>>> ec2a5e08ebc86224703852533d0cce2b4472192a
       left: 40%;
       overflow: auto;
       border-bottom: $color-primary 1px solid;
@@ -1478,42 +1466,67 @@ LOCATIONS
 
 #contact-us {
 
-h4 {
-  line-height: 2em;
-}
+  h4 {
+    line-height: 2em;
+  }
 
-.contact-row {
-  width: 100%;
-  text-align: center;
-  padding: 0.4em;
-  a {
-    text-decoration: none;
-    color: $color-primary;
-    margin-left: 0.2em;
-  }
-  h2 {
-    display: inline-block;
-    font-size: 1.7em;
-    color: $color-primary;
-    vertical-align: middle;
-    margin: 0.5em 0;
-    @media screen and (max-width: 1500px) {
+  .contact-row {
+    width: 100%;
+    text-align: center;
+    padding: 0.4em;
+    a {
+      text-decoration: none;
+      color: $color-primary;
+      margin-left: 0.2em;
+    }
+    h2 {
+      //display: inline-block;
+      font-size: 1.7em;
+      color: $color-primary;
+      vertical-align: middle;
+      margin: 0.5em 0;
+      @media screen and (max-width: 1500px) {
+        font-size: 1.5em;
+      }
+      @media screen and (max-width: 1000px) {
+        font-size: 1.3em;
+      }
+    }
+    h3 {
+      //display: inline-block;
       font-size: 1.5em;
+      color: $color-primary;
+      margin: 0.5em 0;
+      @media screen and (max-width: 1500px) {
+        font-size: 1.3em;
+      }
+      @media screen and (max-width: 1000px) {
+        font-size: 1.1em;
+      }
     }
-    @media screen and (max-width: 1000px) {
-      font-size: 1.3em;
+    h4 {
+      //display: inline-block;
+      font-size: 1.2em;
+      line-height: 1.4em;
+      color: $color-black !important;
+      margin: 1em 0 0.3em 0;
+      @media screen and (max-width: 1500px) {
+        font-size: 1.1em;
+      }
+      @media screen and (max-width: 1000px) {
+        font-size: 1em;
+      }
+    }
+    img {
+      display: inline-block;
+      width: 1.8vw;
+      max-width: 24px;
+      min-width: 16px;
+      height: auto;
+      vertical-align: middle;
+      margin: 0 0.3em 0 0;
     }
   }
-  img {
-    display: inline-block;
-    width: 1.8vw;
-    max-width: 24px;
-    min-width: 16px;
-    height: auto;
-    vertical-align: middle;
-    margin: 0 0.3em 0 0;
-  }
-}
 
 }
 

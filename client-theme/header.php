@@ -86,7 +86,9 @@ if ($iphone || $android || $palmpre || $ipod || $berry || $ipad == true) { ?>
 
 <header>
 
-  <a href="/"><img id="logo" src="<?= the_field('logo','option'); ?>" alt="Kubota & Craig"></a>
+  <div id="logo">
+    <img src="<?= the_field('logo','option'); ?>" alt="Kubota & Craig">
+  </div>
 
   <a id="header-menu-toggle" href="javascript:void(0);" class="clearfix"><img class="stretch left" src="<?= get_template_directory_uri(); ?>/images/global/icon-hamburger.svg"><span class="full left">MENU</span></a>
 
